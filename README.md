@@ -36,6 +36,7 @@ Ubuntu 18.04 - installing dependencies:
 sudo apt-get install gir1.2-goocanvas-2.0 python-gi python-gi-cairo python3-gi python3-gi-cairo python3-pygraphviz gir1.2-gtk-3.0 ipython3 python-pygraphviz python-kiwi python3-setuptools qt5-default gdb pkg-config uncrustify tcpdump sqlite sqlite3 libsqlite3-dev libxml2 libxml2-dev openmpi-bin openmpi-common openmpi-doc libopenmpi-dev gsl-bin libgsl-dev libgslcblas0 cmake libc6-dev libc6-dev-i386 libclang-6.0-dev llvm-6.0-dev automake python3-pip libgtk-3-dev vtun lxc uml-utilities python3-sphinx dia build-essential libsqlite3-dev libboost-all-dev libssl-dev git python-setuptools castxml python-dev python-pygraphviz python-kiwi python-gnome2 ipython libcairo2-dev python3-gi libgirepository1.0-dev python-gi python-gi-cairo gir1.2-gtk-3.0 gir1.2-goocanvas-2.0 python-pip graphviz-dev
 
 pip install graphviz pygraphviz pycairo PyGObject pygccxml
+
 ```
 
 SUMO installation guide for Ubuntu 18.04 (brief tutorial):
@@ -61,6 +62,7 @@ cd $HOME; mkdir ndnSIM; cd ndnSIM
 git clone -b ndnSIM-ns-3.30.1 https://github.com/named-data-ndnSIM/ns-3-dev.git ns-3
 git clone -b 0.21.0 https://github.com/named-data-ndnSIM/pybindgen.git pybindgen
 git clone -b ndnSIM-2.8 --recursive https://github.com/named-data-ndnSIM/ndnSIM ns-3/src/ndnSIM
+
 ```
 
 ## **Building**
@@ -79,12 +81,14 @@ git clone https://github.com/vodafone-chair/ns3-sumo-coupling.git src/ns3-sumo-c
 mv src/ns3-sumo-coupling/traci* src/; rm -fr src/ns3-sumo-coupling/
 git clone https://github.com/nlohmann/json.git src/json
 make configure; make
+
 ```
 
 ```sh
 cd $HOME/ndnSIM/ns-3
 git clone https://github.com/guibaraujo/ndn4ivc.git contrib/ndn4ivc
 make configure; make
+
 ```
 
 ## **Patching**
@@ -92,6 +96,7 @@ make configure; make
 // visualizer: fix error to show ndn faces
 cd $HOME/ndnSIM/
 sed -i 's/getForwarder().getFaceTable()/getFaceTable()/g' ns-3/src/visualizer/visualizer/plugins/ndnsim_fib.py
+
 ```
 
 ## **Running Use Cases**
