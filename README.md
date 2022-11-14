@@ -57,8 +57,6 @@ source ~/.bashrc;
 Ns-3|ndnSIM installation guide for Ubuntu 18.04 (brief tutorial):
 ```sh
 cd $HOME; mkdir ndnSIM; cd ndnSIM
-```
-```sh
 git clone -b ndnSIM-ns-3.30.1 https://github.com/named-data-ndnSIM/ns-3-dev.git ns-3
 git clone -b 0.21.0 https://github.com/named-data-ndnSIM/pybindgen.git pybindgen
 git clone -b ndnSIM-2.8 --recursive https://github.com/named-data-ndnSIM/ndnSIM ns-3/src/ndnSIM
