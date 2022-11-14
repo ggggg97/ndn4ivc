@@ -43,7 +43,7 @@ SUMO installation guide for Ubuntu 18.04 (brief tutorial):
 ```sh
 sudo apt-get install python3 g++ libxerces-c-dev libfox-1.6-dev libgdal-dev libproj-dev libgl2ps-dev 
 cd $HOME;
-wget "https://sourceforge.net/projects/sumo/files/sumo/version%201.1.0/sumo-all-1.1.0.tar.gz/download" -0 sumo-all-1.1.0.tar.gz
+wget "https://sourceforge.net/projects/sumo/files/sumo/version%201.1.0/sumo-all-1.1.0.tar.gz/download" -O sumo-all-1.1.0.tar.gz
 tar -xvzf sumo-all-1.1.0.tar.gz; ln -s sumo-1.1.0 sumo
 cd sumo; 
 ./configure --with-python
