@@ -67,6 +67,7 @@ git clone -b ndnSIM-2.8 --recursive https://github.com/named-data-ndnSIM/ndnSIM 
 ```sh
 cd $HOME/ndnSIM/ns-3
 #./waf configure -d optimized
+#./waf configure --enable-examples --enable-tests -d debug --python=usr/bin/python3.8 <--- depend on our prefered python version
 ./waf configure --enable-examples --enable-tests -d debug
 ./waf 
 ```
