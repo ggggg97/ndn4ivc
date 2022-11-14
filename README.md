@@ -40,6 +40,13 @@ pip install pycairo graphviz pygraphviz PyGObject pygccxml
 ```
 
 SUMO installation guide for Ubuntu 18.04 (brief tutorial):
+
+```sh
+sudo add-apt-repository ppa:sumo/stable
+sudo apt-get update
+sudo apt-get install sumo sumo-tools sumo-doc
+```
+or can use these
 ```sh
 sudo apt-get install python3 g++ libxerces-c-dev libfox-1.6-dev libgdal-dev libproj-dev libgl2ps-dev 
 cd $HOME;
