@@ -133,13 +133,13 @@ Lightweight, test demo (Traffic Management Services) [[Watch a demo]](https://yo
 Full, complete demo (Intelligent Transportation System) [[Watch a demo]](https://youtu.be/tAN8iemPoAo)
 ```sh
 # running simulation in text mode only
-./waf --run "./waf --run vndn-example-its --s=500" 
+./waf --run "vndn-example-its --s=500" 
 # running with graphical user interface sumo-gui
-./waf --run "./waf --run vndn-example-its --s=500 --sumo-gui" 
+./waf --run "vndn-example-its --s=500 --sumo-gui" 
 # ns3 visualizer
-./waf --run "./waf --run vndn-example-its --s=500" --vis
+./waf --run "vndn-example-its --s=500" --vis
 # both
-./waf --run "./waf --run vndn-example-its --s=500 --sumo-gui" --vis 
+./waf --run "vndn-example-its --s=500 --sumo-gui" --vis 
 ```
 
 ### **E.g. Another cases**
