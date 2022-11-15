@@ -126,7 +126,8 @@ Here is the recommended set of steps for generating XML Animation traces.They mu
 NOTE: A node must have an associated mobility model in-order to be displayed on the animation. This applies for both stationary and mobile nodes (See notes below)
 
 Mandatory
- * 0. Ensure that your wscript includes the "netanim" module. Example as in: src/netanim/examples/wscript. <-- put this in our example folder not ns3 folder
+ * 0. Ensure that your wscript includes the "netanim" module. 
+      Example as in: ns-3/src/netanim/examples/wscript. <-- find in the ns3 folder (just example) then put ['netanim'] put this in our example folder not ns3 folder
  * 1. Also include the header [#include "ns3/netanim-module.h"] in your test program
  * 2. Add the statement "AnimationInterface anim ("animation.xml");" before Simulator::Run()
 
