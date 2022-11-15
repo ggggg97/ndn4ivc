@@ -115,6 +115,7 @@ make
 
 ```
 ##**Using ns3::AnimationInterface to generate Animation trace files**
+
 The NetAnim application requires a custom trace file for animation. This trace file is created by AnimationInterface in ns-3.
 
 Model is at: src/netanim/model
@@ -128,6 +129,7 @@ Mandatory
  * 0. Ensure that your wscript includes the "netanim" module. Example as in: src/netanim/examples/wscript. 
  * 1. Also include the header [#include "ns3/netanim-module.h"] in your test program
  * 2. Add the statement "AnimationInterface anim ("animation.xml");" before Simulator::Run()
+
 Optional
  * 3. anim.SetMobilityPollInterval (Seconds (1));[OPTIONAL]
  * 4. anim.SetConstantPosition (Ptr< Node > n, double x, double y); [OPTIONAL]
