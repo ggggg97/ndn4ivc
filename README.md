@@ -114,7 +114,7 @@ qmake NetAnim.pro
 make
 
 ```
-Using ns3::AnimationInterface to generate Animation trace files
+##**Using ns3::AnimationInterface to generate Animation trace files**
 The NetAnim application requires a custom trace file for animation. This trace file is created by AnimationInterface in ns-3.
 
 Model is at: src/netanim/model
@@ -125,13 +125,13 @@ Here is the recommended set of steps for generating XML Animation traces.They mu
 NOTE: A node must have an associated mobility model in-order to be displayed on the animation. This applies for both stationary and mobile nodes (See notes below)
 
 Mandatory
- 0. Ensure that your wscript includes the "netanim" module. Example as in: src/netanim/examples/wscript. 
- 1. Also include the header [#include "ns3/netanim-module.h"] in your test program
- 2. Add the statement "AnimationInterface anim ("animation.xml");" before Simulator::Run()
+ * 0. Ensure that your wscript includes the "netanim" module. Example as in: src/netanim/examples/wscript. 
+ * 1. Also include the header [#include "ns3/netanim-module.h"] in your test program
+ * 2. Add the statement "AnimationInterface anim ("animation.xml");" before Simulator::Run()
 Optional
- 3. anim.SetMobilityPollInterval (Seconds (1));[OPTIONAL]
- 4. anim.SetConstantPosition (Ptr< Node > n, double x, double y); [OPTIONAL]
- 5. anim.EnablePacketMetadata (true); [OPTIONAL]  available only on ns-3-dev and from ns-3.14. Used to show packet meta data on the packet statistics and packet animation
+ * 3. anim.SetMobilityPollInterval (Seconds (1));[OPTIONAL]
+ * 4. anim.SetConstantPosition (Ptr< Node > n, double x, double y); [OPTIONAL]
+ * 5. anim.EnablePacketMetadata (true); [OPTIONAL]  available only on ns-3-dev and from ns-3.14. Used to show packet meta data on the packet statistics and packet animation
 Try to keep the above as close as possible to the "Simulator::Run()" statement
 
 ## **Running Use Cases**
